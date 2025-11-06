@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Translation & Language Services — Anna Kosse</title>
+  <style>
+    :root {
+      --color-primary: #B8E6FE;
+      --color-dark: #432007;
+      --color-light: #FFFBEb;
+      --font-heading: "Playfair Display", serif;
+      --font-body: "Inter", sans-serif;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font-body);
+      background-color: var(--color-light);
+      color: var(--color-dark);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(rgba(67, 32, 7, 0.4), rgba(67, 32, 7, 0.4)), 
+                  url("https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1400&q=80");
+      background-position: center;
+      background-size: cover;
+      color: white;
+      text-align: center;
+      padding: 5rem 1rem;
+    }
+
+    header h1 {
+      font-family: var(--font-heading);
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto;
+      opacity: 0.9;
+    }
+
+    section {
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .service {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 2rem;
+      max-width: 320px;
+      transition: transform 0.3s ease;
+    }
+
+    .service:hover {
+      transform: translateY(-5px);
+    }
+
+    .service h3 {
+      color: var(--color-dark);
+      font-family: var(--font-heading);
+      margin-bottom: 1rem;
+    }
+    
+    .contact-form {
+        max-width: 500px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contact-form input, .contact-form textarea {
+        padding: 10px;
+        border-radius: 8px;
+        border: 1px solid #432007;
+        background-color: #FFFBEb;
+        }
+    
+    .contact-form button {
+        background-color: #B8E6FE;
+        color: #432007;
+        font-weight: bold;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    
+    .contact-form button:hover {
+        background-color: #91d4fc;
+    }
+
+    footer {
+      background-color: var(--color-primary);
+      color: var(--color-dark);
+      text-align: center;
+      padding: 1rem;
+      font-size: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      .services {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Welcome to My Language Studio</h1>
+    <p>
+      Bridging tradition and technology — from the art of translation to the precision of AI-assisted language solutions.
+    </p>
+  </header>
+
+  <section>
+    <div class="services">
+      <div class="service">
+        <h3>Translation</h3>
+        <p>
+          Over 20 years of experience translating legal, financial, and governmental documents with cultural precision and clarity.
+        </p>
+      </div>
+      <div class="service">
+        <h3>Interpreting</h3>
+        <p>
+          Professional interpreting for courts, business meetings, and official events — ensuring your message is heard exactly as intended.
+        </p>
+      </div>
+      <div class="service">
+        <h3>Language & AI Services</h3>
+        <p>
+          Localisation, AI translation QA and revision, and modern content solutions.  
+          Certified in programming fundamentals (Python & HTML) — where language meets code.
+        </p>
+      </div>
+    </div>
+  </section>
+
+<section class="contact">
+  <h2>Write to me</h2>
+  <form action="https://formspree.io/f/https://formspree.io/f/xrbonaal" method="POST" class="contact-form">
+    <label for="name">Your name</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Your email</label>
+    <input type="email" id="email" name="_replyto" required>
+
+    <label for="subject">Subject</label>
+    <input type="text" id="subject" name="subject" required>
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+<footer>
+  <p>Contact: <a href="mailto:ak_dok@inbox.lv">ak_dok@inbox.lv</a></p>
+</footer>
+</body>
+</html>
