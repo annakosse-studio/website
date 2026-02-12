@@ -151,13 +151,10 @@ p {
     
 @media (max-width: 768px) {
 
-    .package-row {
-        flex-direction: column !important;
-        gap: 30px;
-    }
-
+    .package-row,
     .package-row.reverse {
         flex-direction: column !important;
+        gap: 30px;
     }
 
     .package-text,
@@ -168,6 +165,7 @@ p {
     .package-image {
         order: -1;
         max-width: 95%;
+        height: auto;
         margin: auto;
         display: block;
     }
@@ -282,5 +280,6 @@ p {
     
 </body>
 </html>
+
 
 
