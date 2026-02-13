@@ -1,201 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
-<head link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-<meta charset="UTF-8">
-<title>AK Language Studio – Professional Translation & Interpreting Services</title>
-<style>
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 
-body {
-    margin: 0;
-    font-family: 'Open Sans', sans-serif;
-    background-color: #f6f1ea;
-    color: #222;
-}
+  <meta charset="UTF-8">
+  <title>AK Language Studio – Professional Translation & Interpreting Services</title>
 
-header {
-    text-align: center;
-    padding: 40px 20px;
-}
+  <style>
 
-header h1 {
-    margin-bottom: 10px;
-}
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #f6f1ea;
+      color: #222;
+    }
 
-header p {
-    font-size: 18px;
-}
+    header {
+      text-align: center;
+      padding: 40px 20px;
+    }
 
-.packages {
-    padding: 40px 20px;
-}
+    header h1 {
+      margin-bottom: 10px;
+    }
 
-.package-content h2 {
-    margin-top: 0;
-}
+    header p {
+      font-size: 18px;
+    }
 
-.package-content p {
-    line-height: 1.6;
-}
+    .packages {
+      padding: 40px 20px;
+    }
 
-.form-section {
-    text-align: center;
-    padding: 60px 20px;
-}
+    .package-content h2 {
+      margin-top: 0;
+    }
 
-form {
-    max-width: 500px;
-    margin: auto;
-}
+    .package-content p {
+      line-height: 1.6;
+    }
 
-input, textarea {
-    width: 100%;
-    padding: 12px;
-    margin: 10px 0;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-}
-    
-.btn {
-    display: inline-block;
-    background-color: #1822DE;
-    color: white;
-    padding: 14px 32px;
-    border-radius: 10px;
-    text-decoration: none;
-    margin-top: 20px;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.12);
-}
-    
-.btn:hover {
-    background-color: #1018b8;
-    box-shadow: 0 6px 14px rgba(0,0,0,0.18);
-    transform: translateY(-2px);
-}
+    .form-section {
+      text-align: center;
+      padding: 60px 20px;
+    }
 
-button {
-    padding: 12px 30px;
-    background: #1822DE;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-}
+    form {
+      max-width: 500px;
+      margin: auto;
+    }
 
-button:hover {
-    opacity: 0.9;
-}
+    input,
+    textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
 
-footer {
-    text-align: center;
-    padding: 30px;
-    font-size: 14px;
-}
+    .btn {
+      display: inline-block;
+      background-color: #1822DE;
+      color: white;
+      padding: 14px 32px;
+      border-radius: 10px;
+      text-decoration: none;
+      margin-top: 20px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+    }
 
-a {
-    color: #1822DE;
-    text-decoration: none;
-}
-    
-h1, h2, h3 {
-    font-family: 'Lato', sans-serif;
-}
-    
-.package {
-    padding: 80px 40px;
-}
-    
-.package-content {
-    max-width: 1100;
-    margin: auto;
-}
-    
-p {
-    line-height: 1.7;
-    margin-bottom: 18px;
-}
+    .btn:hover {
+      background-color: #1018b8;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.18);
+      transform: translateY(-2px);
+    }
 
-.package-row {
-    display: flex;
-    align-items: center;
-    gap: 50px;
-    margin-bottom: 80px;
-}
+    button {
+      padding: 12px 30px;
+      background: #1822DE;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
 
-.package-row.reverse {
-    flex-direction: row-reverse !important;
-}
+    button:hover {
+      opacity: 0.9;
+    }
 
-.package-text {
-    flex: 1;
-}
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 14px;
+    }
 
-.package-image {
-    flex: 1;
-}
+    a {
+      color: #1822DE;
+      text-decoration: none;
+    }
 
-.package-image img {
-    width: 100%;
-    border-radius: 16px;
-    max-height: 450px;   /* adjust if you want taller/shorter */
-    object-fit: cover;
-    border-radius: 16px;
-}
-    
-.package-text {
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 0 40px;
-}
-    
-@media (max-width: 768px) {
+    h1,
+    h2,
+    h3 {
+      font-family: 'Lato', sans-serif;
+    }
 
-    .package-row,
+    .package {
+      padding: 80px 40px;
+    }
+
+    /* ⚠ FIX: missing px unit */
+    .package-content {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    p {
+      line-height: 1.7;
+      margin-bottom: 18px;
+    }
+
+    .package-row {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+      margin-bottom: 80px;
+    }
+
     .package-row.reverse {
+      flex-direction: row-reverse !important;
+    }
+
+    .package-text {
+      flex: 1;
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 0 40px;
+    }
+
+    .package-image {
+      flex: 1;
+    }
+
+    .package-image img {
+      width: 100%;
+      max-height: 450px;
+      object-fit: cover;
+      border-radius: 16px;
+    }
+
+    @media (max-width: 768px) {
+
+      .package-row,
+      .package-row.reverse {
         flex-direction: column !important;
         gap: 30px;
-    }
+      }
 
-    .package-text,
-    .package-image {
+      .package-text,
+      .package-image {
         width: 100%;
-    }
+      }
 
-    .package-image {
+      .package-image {
         order: 1;
         padding: 0;
         max-width: 95%;
         height: auto;
         margin: auto;
         display: block;
-    }
+      }
 
-
-    .packages {
+      .packages {
         padding: 20px 15px;
-    }
+      }
 
-    .package-row {
+      .package-row {
         margin-bottom: 60px;
         gap: 30px;
+      }
+
+      .package-text {
+        padding: 0;
+      }
+
+      p {
+        font-size: 16px;
+      }
+
+      .btn {
+        padding: 16px 36px;
+        font-size: 16px;
+      }
     }
 
-    .package-text {
-        padding: 0;
-    }
-    
-    p {
-    font-size: 16px;
-    }
-    
-    .btn {
-    padding: 16px 36px;
-    font-size: 16px;
-    }
-}
-    
-</style>
+  </style>
 </head>
 
 <body>
@@ -280,6 +282,7 @@ p {
     
 </body>
 </html>
+
 
 
 
