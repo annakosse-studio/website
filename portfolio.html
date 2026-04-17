@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AK Language Studio – Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #f6f1ea;
+      color: #222;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Lato', sans-serif;
+    }
+
+    p {
+      line-height: 1.7;
+      margin-bottom: 18px;
+    }
+
+    a {
+      color: #1822DE;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px 20px;
+    }
+
+    .top-nav {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      flex-wrap: wrap;
+      font-weight: 600;
+    }
+
+    .top-nav a {
+      color: #1822DE;
+    }
+
+    .portfolio {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .portfolio-header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .portfolio-header h1 {
+      margin-bottom: 10px;
+    }
+
+    .portfolio-subtitle {
+      font-size: 18px;
+      max-width: 700px;
+      margin: auto;
+      line-height: 1.6;
+      color: #444;
+    }
+
+    .case-studies {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .case-card {
+      background: white;
+      padding: 40px;
+      border-radius: 14px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .case-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 26px rgba(0,0,0,0.12);
+    }
+
+    .case-card h2 {
+      margin-top: 0;
+      margin-bottom: 15px;
+    }
+
+    .case-summary {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .case-link {
+      font-weight: 600;
+      color: #1822DE;
+      cursor: pointer;
+    }
+
+    .case-link:hover {
+      text-decoration: underline;
+    }
+
+    details {
+      margin-top: 10px;
+    }
+
+    summary {
+      list-style: none;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .case-content {
+      margin-top: 25px;
+      padding-top: 20px;
+      border-top: 1px solid #e5e5e5;
+    }
+
+    .case-content h3 {
+      margin-bottom: 8px;
+      font-size: 20px;
+    }
+
+    .case-content ul {
+      margin-top: 0;
+      margin-bottom: 20px;
+      padding-left: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .portfolio {
+        padding: 40px 15px;
+      }
+
+      .case-card {
+        padding: 25px 20px;
+      }
+
+      .portfolio-subtitle {
+        font-size: 16px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Portfolio</h1>
+
+    <div class="top-nav">
+      <a href="index.html">Packages</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+    </div>
+  </header>
+
+  <section class="portfolio">
+    <div class="portfolio-header">
+      <h1>Case Studies</h1>
+      <p class="portfolio-subtitle">
+        Selected projects demonstrating precision, consistency, and applied linguistic expertise across legal and AI-driven environments.
+      </p>
+    </div>
+
+    <div class="case-studies">
+
+      <!-- Case Study 1 -->
+      <div class="case-card">
+        <h2>Multi-source Legal Terminology Alignment</h2>
+        <p class="case-summary">
+          Resolving conflicting terminology across national and European legal systems to ensure consistency and legal precision.
+        </p>
+
+        <details>
+          <summary class="case-link">View case study</summary>
+
+          <div class="case-content">
+            <h3>Context</h3>
+            <p>
+              The project involved translating a set of legal documents containing decisions issued at different levels of judicial proceedings.
+            </p>
+
+            <h3>Challenge</h3>
+            <p>
+              The terminology-heavy content referenced both national legislation and European legal instruments. Available reference materials included official translations of laws, EU regulations, and existing institutional translations, often using inconsistent terminology.
+            </p>
+            <p>
+              As a result, key legal terms lacked consistent equivalents, certain concepts had no direct one-to-one correspondence in English, and frequent repetition of critical terms required strict internal consistency.
+            </p>
+
+            <h3>Approach</h3>
+            <p>
+              A targeted terminology research strategy was developed, drawing on authoritative legal textbooks, official legislative translations, and EU regulatory terminology.
+            </p>
+            <p>
+              The hierarchy and applicability of sources were carefully evaluated, and the findings were consolidated into a structured working glossary to ensure consistency across all documents.
+            </p>
+
+            <h3>Additional Complexity</h3>
+            <p>
+              The client required the use of a single equivalent for certain terms across all contexts. This created a need to balance legal precision, consistency, readability, and client expectations.
+            </p>
+
+            <h3>Solution</h3>
+            <p>
+              Terminology was systematically refined by analysing recurring terms and aligning their usage across documents. Where necessary, adjustments were made to meet client requirements while preserving clarity and legal coherence.
+            </p>
+
+            <h3>Result</h3>
+            <ul>
+              <li>Consistent and coherent terminology across all materials</li>
+              <li>Alignment with both national and European legal frameworks</li>
+              <li>Documents successfully prepared for use in international legal proceedings</li>
+            </ul>
+          </div>
+        </details>
+      </div>
+
+      <!-- Case Study 2 -->
+      <div class="case-card">
+        <h2>Localisation and Consistency in AI Training Data</h2>
+        <p class="case-summary">
+          Preparing a clean and consistent dataset through localisation and large-scale terminology alignment for AI training.
+        </p>
+
+        <details>
+          <summary class="case-link">View case study</summary>
+
+          <div class="case-content">
+            <h3>Context</h3>
+            <p>
+              The project involved translating and annotating a large dataset of English-language user utterances intended for use in an AI-driven system.
+            </p>
+
+            <h3>Challenge</h3>
+            <p>
+              The dataset contained a high volume of short, spoken-style phrases, many of which included:
+            </p>
+            <ul>
+              <li>culturally specific references</li>
+              <li>regional expressions</li>
+              <li>context-dependent meaning</li>
+            </ul>
+            <p>
+              As a result, direct translation into Russian did not always retain the intended functionality and naturalness of the utterances.
+            </p>
+            <p>
+              In addition, consistency across repeated or similar source segments was critical for training purposes.
+            </p>
+
+            <h3>Approach</h3>
+            <p>
+              The issue of non-transferable local features was identified during the translation process and escalated.
+            </p>
+            <p>
+              In coordination with the project team, the strategy was adjusted from direct translation to targeted localisation.
+            </p>
+            <p>
+              The workflow included:
+            </p>
+            <ul>
+              <li>adapting culturally specific phrases into natural target-language equivalents</li>
+              <li>maintaining functional intent rather than literal meaning</li>
+              <li>ensuring consistency across recurring segments</li>
+            </ul>
+
+            <h3>Additional Complexity</h3>
+            <p>
+              The dataset required systematic verification to ensure that identical or similar source phrases were rendered consistently across the entire corpus.
+            </p>
+            <p>
+              This introduced a layer of large-scale consistency control and quality assurance.
+            </p>
+
+            <h3>Solution</h3>
+            <p>
+              A structured review process was implemented to:
+            </p>
+            <ul>
+              <li>align repeated segments</li>
+              <li>eliminate inconsistencies</li>
+              <li>standardise phrasing across the dataset</li>
+            </ul>
+
+            <h3>Result</h3>
+            <ul>
+              <li>A clean, consistent, and localised dataset suitable for AI training</li>
+              <li>Improved naturalness and usability of target-language utterances</li>
+              <li>Reliable alignment between source intent and target output</li>
+            </ul>
+          </div>
+        </details>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    © AK Language Studio, 2026
+  </footer>
+
+</body>
+</html>
