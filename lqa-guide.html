@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AK Language Studio – AI-Aware Legal Language Guide</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #f6f1ea;
+      color: #222;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'Lato', sans-serif;
+      color: #222;
+    }
+
+    p, li {
+      line-height: 1.7;
+    }
+
+    p {
+      margin-bottom: 18px;
+    }
+
+    a {
+      color: #1822DE;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px 20px;
+    }
+
+    .top-nav {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      flex-wrap: wrap;
+      font-weight: 600;
+    }
+
+    .top-nav a {
+      color: #1822DE;
+    }
+
+    .guide-section {
+      padding: 60px 20px;
+    }
+
+    .container {
+      max-width: 980px;
+      margin: auto;
+    }
+
+    .guide-header {
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .guide-header h1 {
+      margin: 0 auto 14px;
+      max-width: 880px;
+      font-size: 36px;
+      line-height: 1.2;
+    }
+
+    .guide-subtitle {
+      font-size: 18px;
+      max-width: 760px;
+      margin: auto;
+      line-height: 1.6;
+      color: #444;
+    }
+
+    .guide-content {
+      background: white;
+      padding: 50px;
+      border-radius: 16px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    }
+
+    .guide-content h1 {
+      margin-top: 56px;
+      padding-top: 10px;
+      font-size: 30px;
+      color: #1822DE;
+    }
+
+    .guide-content h1:first-child {
+      margin-top: 0;
+    }
+
+    .guide-content h2 {
+      margin-top: 42px;
+      margin-bottom: 18px;
+      font-size: 24px;
+      color: #1822DE;
+    }
+
+    .guide-content h3 {
+      margin-top: 34px;
+      margin-bottom: 14px;
+      font-size: 20px;
+    }
+
+    .guide-content h4 {
+      margin-top: 26px;
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    .guide-content strong {
+      font-weight: 700;
+    }
+
+    .guide-content blockquote {
+      margin: 24px 0;
+      padding: 18px 22px;
+      border-left: 4px solid #1822DE;
+      background: #f6f1ea;
+      border-radius: 0 10px 10px 0;
+    }
+
+    .guide-content blockquote p {
+      margin: 0 0 10px;
+    }
+
+    .guide-content blockquote p:last-child {
+      margin-bottom: 0;
+    }
+
+    .guide-content ul,
+    .guide-content ol {
+      padding-left: 24px;
+      margin-bottom: 22px;
+    }
+
+    .guide-content li {
+      margin-bottom: 8px;
+    }
+
+    .guide-toc {
+      background: #f6f1ea;
+      border-radius: 14px;
+      padding: 24px 28px;
+      margin-bottom: 42px;
+      border: 1px solid rgba(24,34,222,0.14);
+    }
+
+    .guide-toc h2 {
+      margin-top: 0;
+      margin-bottom: 14px;
+      color: #222;
+      font-size: 22px;
+    }
+
+    .guide-toc ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .guide-toc li {
+      margin: 8px 0;
+      line-height: 1.5;
+    }
+
+    .guide-toc .toc-sub {
+      margin-left: 18px;
+      font-size: 15px;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      margin: 26px 0 34px;
+      border-radius: 12px;
+      border: 1px solid #e3e0da;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 720px;
+      background: white;
+    }
+
+    th, td {
+      text-align: left;
+      vertical-align: top;
+      padding: 13px 14px;
+      border-bottom: 1px solid #e3e0da;
+      line-height: 1.55;
+      font-size: 15px;
+    }
+
+    th {
+      background: #f6f1ea;
+      font-weight: 700;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #e3e0da;
+      margin: 42px 0;
+    }
+
+    .bottom-actions {
+      text-align: center;
+      margin-top: 42px;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #1822DE;
+      color: white;
+      padding: 14px 32px;
+      border-radius: 10px;
+      text-decoration: none;
+      margin-top: 20px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+      font-weight: 600;
+    }
+
+    .btn:hover {
+      background-color: #1018b8;
+      color: white;
+      text-decoration: none;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.18);
+      transform: translateY(-2px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        padding: 30px 15px 15px;
+      }
+
+      .top-nav {
+        gap: 16px;
+      }
+
+      .guide-section {
+        padding: 40px 15px;
+      }
+
+      .guide-header {
+        margin-bottom: 32px;
+      }
+
+      .guide-header h1 {
+        font-size: 28px;
+      }
+
+      .guide-subtitle {
+        font-size: 16px;
+      }
+
+      .guide-content {
+        padding: 30px 22px;
+      }
+
+      .guide-content h1 {
+        font-size: 25px;
+        margin-top: 44px;
+      }
+
+      .guide-content h2 {
+        font-size: 22px;
+        margin-top: 34px;
+      }
+
+      .guide-content h3 {
+        font-size: 19px;
+      }
+
+      p, li {
+        font-size: 16px;
+      }
+
+      .guide-toc {
+        padding: 20px;
+      }
+
+      .guide-toc .toc-sub {
+        margin-left: 0;
+      }
+
+      th, td {
+        font-size: 14px;
+        padding: 11px 12px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="top-nav">
+      <a href="index.html">Packages</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="guide.html">Guidelines</a>
+    </div>
+  </header>
+
+  <main class="guide-section">
+    <div class="container">
+
+      <div class="guide-header">
+        <h1>AI-Aware Legal Language: From Rough Notes to a Multilingual Client Interface</h1>
+        <p class="guide-subtitle">A practical guide to UX writing, localisation and linguistic quality assessment</p>
+      </div>
+
+      <article class="guide-content">
+        <nav class="guide-toc" aria-label="Guide contents">
+<h2>Contents</h2>
+<ul>
+  <li class="toc-part"><a href="#part-i-ux-writing-for-legal-interfaces">Part I — UX Writing for Legal Interfaces</a></li>
+  <li class="toc-sub"><a href="#sample-1-ux-rewrite">Sample 1: UX rewrite</a></li>
+  <li class="toc-part"><a href="#part-ii-legal-localisation">Part II — Legal Localisation</a></li>
+  <li class="toc-sub"><a href="#sample-2-english-to-russian-localisation">Sample 2: English-to-Russian localisation</a></li>
+  <li class="toc-part"><a href="#part-iii-lqa-in-practice">Part III — LQA in Practice</a></li>
+  <li class="toc-sub"><a href="#why-lqa-is-more-than-proofreading">Why LQA is more than proofreading</a></li>
+  <li class="toc-sub"><a href="#simplified-lqa-taxonomy">Simplified LQA taxonomy</a></li>
+  <li class="toc-sub"><a href="#severity-levels">Severity levels</a></li>
+  <li class="toc-sub"><a href="#sample-3-lqa-review-of-an-ai-assisted-russian-legal-notice">Sample 3: LQA review of an AI-assisted Russian legal notice</a></li>
+  <li class="toc-part"><a href="#bonus-when-ai-localisation-is-almost-right">Bonus — When AI localisation is almost right</a></li>
+  <li class="toc-part"><a href="#what-the-workflow-shows">What the workflow shows</a></li>
+  <li class="toc-part"><a href="#business-and-user-impact">Business and user impact</a></li>
+</ul>
+</nav>
+
+        <h3 id="introduction">Introduction</h3>
+<p>AI can help turn rough legal notes into interface copy, translate approved content and identify possible language problems. A publishable result still requires decisions about user flow, legal meaning, terminology, localisation and quality assurance.</p>
+<p>This fictional case study follows three smart, energetic and knowledgeable lawyers at <strong>Perfectly Legal</strong> as they prepare a document-submission page for their new website. Their first draft contains the right legal ideas, but the content is too compressed and abstract to guide a client through the process.</p>
+<p>We take the content through three stages:</p>
+<ol>
+<li><strong>UX writing:</strong> turn the lawyers’ draft into clear, usable English interface copy.</li>
+<li><strong>Localisation:</strong> adapt the approved interface for Russian-speaking users.</li>
+<li><strong>Language quality assessment (LQA):</strong> identify linguistic, functional and legal-risk issues before publication.</li>
+</ol>
+<p>The same workflow can be carried out with general-purpose AI tools. The important question is not whether AI can produce a plausible first draft. It is whether the resulting content is <strong>clear for the user, appropriate for the target language and safe for the legal context</strong>.</p>
+<hr/>
+<h1 id="part-i-ux-writing-for-legal-interfaces">Part I — UX Writing for Legal Interfaces</h1>
+<h2 id="sample-1-ux-rewrite">Sample 1: UX rewrite</h2>
+<h3 id="the-task">The task</h3>
+<p>Perfectly Legal has asked a prospective client to send documents through a secure upload link. The interface must explain what to upload, how to check the files, what the client is confirming and what happens after submission.</p>
+<h3 id="before-the-lawyers-working-draft">Before: the lawyers’ working draft</h3>
+<blockquote>
+<p><strong>Submit Your Documents</strong></p>
+<p>Please provide all documents and information that may be necessary for the provision of the requested services. Documents must be submitted in an appropriate format. Failure to submit complete information may result in delays. By submitting this form, you confirm that the information is correct.</p>
+<p>Read our Confidentiality and Document Submission Notice (PDF).</p>
+</blockquote>
+<p>The draft is legally informed, but it does not yet function well as interface copy:</p>
+<ul>
+<li><strong>Submit Your Documents</strong> sounds formal and slightly abrupt.</li>
+<li>“All documents and information that may be necessary” does not tell the client which documents to send.</li>
+<li>“Provision of the requested services” may suggest that the firm has already agreed to act.</li>
+<li>“Appropriate format” gives the client no usable technical information.</li>
+<li>The warning about delays is impersonal and does not explain how to avoid them.</li>
+<li>Instructions, technical requirements, a warning and a confirmation are compressed into one paragraph.</li>
+<li>The client is not told what happens after submission.</li>
+<li>The confidentiality notice is named but its relevance is not explained.</li>
+</ul>
+<h3 id="after-the-rewritten-interface">After: the rewritten interface</h3>
+<h4>Upload your documents</h4>
+<p>Upload the documents listed in our email. You can upload PDF, DOCX or JPG files up to 20 MB each.</p>
+<p><strong>[Upload files]</strong></p>
+<h4>Your files</h4>
+<p>Review the files you have added. You can remove a file or upload another one before sending your request.</p>
+<p><strong>[Add another file]</strong></p>
+<h4>Before you continue</h4>
+<p>☐ I confirm that, to the best of my knowledge, the information I have provided is complete and accurate.</p>
+<p>Read how we handle submitted documents in our <strong>Confidentiality and Document Submission Notice (PDF)</strong>.</p>
+<p><strong>[Send request]</strong></p>
+<h4>Confirmation</h4>
+<p><strong>Your request has been sent</strong></p>
+<p>We will review the information provided and contact you to confirm whether we can assist. Sending documents does not mean that we have agreed to act for you.</p>
+<h3 id="main-ux-decisions">Main UX decisions</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Original problem</th>
+<th>UX decision</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Abstract instruction</td>
+<td>Refer to the specific document list already sent to the client</td>
+</tr>
+<tr>
+<td>“Appropriate format”</td>
+<td>Specify PDF, DOCX or JPG and a 20 MB file limit</td>
+</tr>
+<tr>
+<td>Dense paragraph</td>
+<td>Separate uploading, file review, confirmation and legal information</td>
+</tr>
+<tr>
+<td>Unclear professional status</td>
+<td>Explain that the firm must review the request before agreeing to assist</td>
+</tr>
+<tr>
+<td>Imported or overly formal legal disclaimer</td>
+<td>State the practical consequence in ordinary language</td>
+</tr>
+<tr>
+<td>Unexplained confidentiality link</td>
+<td>Tell the client what information the linked notice contains</td>
+</tr>
+<tr>
+<td>No indication of the next step</td>
+<td>Add a confirmation state and explain what follows</td>
+</tr>
+<tr>
+<td>Formal administrative tone</td>
+<td>Use calm, professional and direct language</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="ux-impact">UX impact</h3>
+<p>The rewritten interface reduces uncertainty at each step. Clients know which documents to upload, which formats are accepted, what they must check and what the firm will do next. The firm also avoids implying that submitting documents automatically creates an engagement.</p>
+<hr/>
+<h1 id="part-ii-legal-localisation">Part II — Legal Localisation</h1>
+<h2 id="sample-2-english-to-russian-localisation">Sample 2: English-to-Russian localisation</h2>
+<h3 id="the-task-2">The task</h3>
+<p>Now that the English UX version has been approved, the lawyers decide to translate it for Russian-speaking readers. They ask a current general-purpose AI assistant to produce a Russian version, using a realistic and reasonably specific prompt:</p>
+<blockquote>
+<p>Translate the following law-firm website interface into Russian. Use clear, professional language appropriate for prospective clients. Preserve the structure and distinguish headings, instructions and buttons. Do not add or omit legal meaning.</p>
+</blockquote>
+<p>The result is fluent, professional and quite convincing. Nevertheless, the lawyers notice several places where the Russian follows the English too closely, sounds heavier than necessary or shifts the practical legal meaning. They mark their corrections and queries, then prompt ChatGPT again.</p>
+<p>This second pass is not a request to “translate the text once more.” It supplies the human judgment needed to improve interface idiom, terminology, tone and legal effect. The resulting version is then checked by a human before publication.</p>
+<h3 id="final-localised-russian-version">Final localised Russian version</h3>
+<h4>Загрузите документы</h4>
+<p>Загрузите документы, указанные в нашем письме. Можно загрузить файлы PDF, DOCX или JPG размером до 20 МБ каждый.</p>
+<p><strong>[Загрузить файлы]</strong></p>
+<h4>Ваши файлы</h4>
+<p>Проверьте добавленные файлы. До отправки запроса вы можете удалить или добавить файлы.</p>
+<p><strong>[Добавить файл]</strong></p>
+<h4>Перед отправкой</h4>
+<p>☐ Подтверждаю, что, насколько мне известно, предоставленная информация полна и достоверна.</p>
+<p>Как мы работаем с документами — в <strong>Уведомлении о конфиденциальности и предоставлении документов (PDF)</strong>.</p>
+<p><strong>[Отправить запрос]</strong></p>
+<h4>Ваш запрос отправлен</h4>
+<p>Мы рассмотрим информацию и свяжемся с вами, чтобы сообщить, можем ли мы помочь. Отправка документов сама по себе не означает, что ваш запрос принят в работу.</p>
+<h3 id="main-localisation-decisions">Main localisation decisions</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>AI-generated wording</th>
+<th>Human-guided decision</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Вы можете загружать файлы</strong></td>
+<td>Use <strong>Можно загрузить файлы</strong>: the perfective verb suits a single submission task, while the impersonal construction avoids unnecessary repetition of <strong>вы</strong>.</td>
+</tr>
+<tr>
+<td><strong>удалить файл или загрузить ещё один</strong></td>
+<td>Use <strong>удалить или добавить файлы</strong>: shorter, more natural and better aligned with the interface actions.</td>
+</tr>
+<tr>
+<td><strong>Перед продолжением</strong></td>
+<td>Use <strong>Перед отправкой</strong>: name the actual stage in the workflow.</td>
+</tr>
+<tr>
+<td><strong>Я подтверждаю … информация является полной</strong></td>
+<td>Use <strong>Подтверждаю … информация полна</strong>: remove the pronoun and heavy copular construction from the checkbox label.</td>
+</tr>
+<tr>
+<td><strong>О том, как мы работаем … читайте в …</strong></td>
+<td>Use a concise, link-oriented formulation: <strong>Как мы работаем с документами — в …</strong></td>
+</tr>
+<tr>
+<td><strong>свяжемся с вами, чтобы подтвердить, можем ли мы вам помочь</strong></td>
+<td>Use <strong>свяжемся с вами, чтобы сообщить, можем ли мы помочь</strong>: the original construction reproduces English logic and is awkward in Russian.</td>
+</tr>
+<tr>
+<td><strong>мы согласились представлять ваши интересы</strong></td>
+<td>Return to the actual workflow: <strong>ваш запрос принят в работу</strong>. This avoids importing a representation formula and preserves the practical consequence for the client.</td>
+</tr>
+</tbody>
+</table></div>
+<p>The title <strong>Уведомление о конфиденциальности и предоставлении документов</strong> remains provisional until the linked document itself has been drafted and its scope confirmed. In a live project, the final terminology and character limits would also be approved by the lawyers and tested in the interface.</p>
+<hr/>
+<h1 id="part-iii-lqa-in-practice">Part III — LQA in Practice</h1>
+<h2 id="why-lqa-is-more-than-proofreading">Why LQA is more than proofreading</h2>
+<p>A localisation quality review should not treat every phrase that a linguist would personally rewrite as an “error”.</p>
+<p>A useful LQA process asks:</p>
+<ul>
+<li>Does the target text preserve the source meaning?</li>
+<li>Is the terminology appropriate to the legal and professional context?</li>
+<li>Does the Russian sound as though it was written for Russian-speaking users rather than transferred from English?</li>
+<li>Does the wording fit the interface or document function?</li>
+<li>Does it follow target-language and locale conventions?</li>
+<li>Could a wording choice create legal, privacy or compliance risk?</li>
+</ul>
+<p>The distinction between <strong>linguistic preference and user impact</strong> is central. Severity should reflect the effect of a problem on the user, workflow or organisation—not how irritating the wording looks to a linguist.</p>
+<h2 id="simplified-lqa-taxonomy">Simplified LQA taxonomy</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Category</th>
+<th>What we review</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Accuracy</strong></td>
+<td>Whether the target preserves the meaning and practical effect of the source</td>
+</tr>
+<tr>
+<td><strong>Terminology</strong></td>
+<td>Whether legal, technical and domain terms are accurate and appropriate</td>
+</tr>
+<tr>
+<td><strong>Language</strong></td>
+<td>Grammar, syntax, collocation, idiomaticity and readability</td>
+</tr>
+<tr>
+<td><strong>Style and tone</strong></td>
+<td>Register, voice and suitability for the intended audience</td>
+</tr>
+<tr>
+<td><strong>Locale conventions</strong></td>
+<td>Russian-language conventions, formatting, punctuation and other locale-specific choices</td>
+</tr>
+<tr>
+<td><strong>User-interface constraints</strong></td>
+<td>Length, labels, buttons, placeholders, structure and other functional constraints</td>
+</tr>
+<tr>
+<td><strong>Legal or compliance risk</strong></td>
+<td>Wording that could create misleading, legally consequential or otherwise material risk</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="severity-levels">Severity levels</h2>
+<h3 id="critical">Critical</h3>
+<p>A problem that could cause <strong>legal, privacy, security or irreversible user harm</strong>.</p>
+<h3 id="major">Major</h3>
+<p>A problem that <strong>changes meaning, impairs the task or uses materially incorrect terminology</strong>.</p>
+<h3 id="minor">Minor</h3>
+<p>A problem that <strong>reduces linguistic quality but does not prevent correct use</strong>.</p>
+<p>A finding is not Major merely because a specialist could formulate it more elegantly. Conversely, a linguistically small change can be Major if it changes the practical or legal meaning.</p>
+<hr/>
+<h2 id="sample-3-lqa-review-of-an-ai-assisted-russian-legal-notice">Sample 3: LQA review of an AI-assisted Russian legal notice</h2>
+<p>For the LQA demonstration, we use a longer legal document: a <strong>Confidentiality and Document Submission Notice</strong>. The Russian version contains several realistic examples of the problems that can remain after an otherwise fluent AI translation.</p>
+<p>The table below is a <strong>representative sample</strong>, not a claim that every possible issue in the document has been listed.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Source segment</th>
+<th>Russian output</th>
+<th>Category</th>
+<th>Severity</th>
+<th>LQA finding</th>
+<th>Suggested correction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>We take <strong>reasonable technical and organisational measures</strong> to protect submitted documents.</td>
+<td>Мы принимаем <strong>разумные технические и организационные меры</strong> для защиты представленных документов.</td>
+<td>Style &amp; tone / Legal or compliance risk</td>
+<td><strong>Major</strong></td>
+<td>Grammatically correct, but <em>разумные меры</em> is a literal rendering that is vague and potentially awkward in formal legal/security language. It does not clearly convey the intended standard of protection.</td>
+<td><strong>Мы принимаем надлежащие технические и организационные меры для защиты представленных документов.</strong></td>
+</tr>
+<tr>
+<td>2</td>
+<td>confidential, <strong>commercially sensitive</strong>, personal or otherwise sensitive information</td>
+<td>конфиденциальную, <strong>коммерчески чувствительную</strong>, персональную или иную <strong>чувствительную информацию</strong></td>
+<td>Terminology / Language</td>
+<td><strong>Major</strong></td>
+<td><em>Коммерчески чувствительная</em> and <em>чувствительная информация</em> are understandable but strongly calque-like in Russian professional legal/privacy communication. The wording may also blur distinctions between different categories of protected information.</td>
+<td>Depending on intended legal meaning: <strong>конфиденциальную, имеющую коммерческую ценность, персональную или иную информацию, требующую защиты</strong>.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>notifying <strong>affected clients</strong> or other relevant persons</td>
+<td>уведомление <strong>затронутых клиентов</strong> или иных соответствующих лиц</td>
+<td>Language / Style &amp; tone</td>
+<td><strong>Minor</strong></td>
+<td><em>Затронутые клиенты</em> is comprehensible but reads as a direct transfer of English <em>affected clients</em>. <em>Иные соответствующие лица</em> is also bureaucratic and unnatural in this context.</td>
+<td><strong>уведомление клиентов, которых затронул инцидент, или иных заинтересованных лиц</strong></td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>acceptance of a matter</strong> / Before accepting a matter</td>
+<td><strong>принятие дела</strong> / До принятия дела</td>
+<td>Terminology / Style &amp; tone</td>
+<td><strong>Minor</strong></td>
+<td><em>Принять дело</em> is possible Russian legal language, so this is not a clear error. However, English <em>matter</em> is broader than <em>дело</em> and may imply litigation rather than a legal engagement generally.</td>
+<td><strong>принятие поручения</strong> / <strong>До подтверждения готовности принять поручение</strong></td>
+</tr>
+<tr>
+<td>5</td>
+<td>any <strong>deadline, limitation period</strong> or other legal requirement</td>
+<td>какие-либо <strong>сроки, сроки исковой давности</strong> или иные юридические требования</td>
+<td>Accuracy / Language</td>
+<td><strong>Major</strong></td>
+<td><em>Сроки</em> already encompasses limitation periods, making the formulation redundant and potentially unclear. The source distinguishes an ordinary deadline from a limitation period, and that distinction should be preserved.</td>
+<td><strong>какие-либо установленные сроки, сроки исковой давности или иные юридические требования</strong>; where appropriate, use a more specific term such as <strong>процессуальные сроки</strong>.</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>legal professional privilege</strong></td>
+<td><strong>юридическая профессиональная привилегия</strong></td>
+<td>Terminology / Legal or compliance risk</td>
+<td><strong>Major</strong></td>
+<td>This is a highly literal translation of a common-law legal concept. <em>Юридическая профессиональная привилегия</em> is not established Russian terminology in the same way, and <strong>адвокатская тайна is not automatically an equivalent</strong>. The correct treatment depends on the applicable legal system.</td>
+<td><strong>Requires jurisdiction-specific legal review.</strong> Do not substitute <em>адвокатская тайна</em> automatically.</td>
+</tr>
+<tr>
+<td>7</td>
+<td>whether the document is <strong>privileged</strong></td>
+<td>данный документ является <strong>привилегированным</strong></td>
+<td>Terminology / Legal or compliance risk</td>
+<td><strong>Major</strong></td>
+<td><em>Привилегированный документ</em> is a transparent calque but sounds unnatural and potentially misleading in Russian legal discourse. It also assumes that the English concept has a direct Russian equivalent.</td>
+<td><strong>имеет ли документ правовую защиту в силу соответствующей привилегии</strong> — subject to jurisdiction-specific legal review.</td>
+</tr>
+<tr>
+<td>8</td>
+<td>whether particular material <strong>may be privileged</strong></td>
+<td>может ли конкретный материал <strong>пользоваться защитой привилегии</strong></td>
+<td>Language / Terminology</td>
+<td><strong>Major</strong></td>
+<td><em>Пользоваться защитой привилегии</em> is structurally understandable but unnatural Russian and perpetuates the unresolved terminology problem. The reader cannot tell what legal protection is actually being referred to.</td>
+<td><strong>может ли конкретный материал пользоваться соответствующей правовой защитой</strong> — with the underlying legal concept specified after jurisdictional review.</td>
+</tr>
+<tr>
+<td>9</td>
+<td>taking <strong>corrective or remedial measures</strong></td>
+<td>принятие <strong>корректирующих или восстановительных мер</strong></td>
+<td>Terminology / Language</td>
+<td><strong>Minor</strong></td>
+<td><em>Корректирующие меры</em> is acceptable in many contexts, but <em>восстановительные меры</em> is an awkward rendering of <em>remedial measures</em> in the context of a security incident. The intended meaning is action to remedy the consequences or address the incident.</td>
+<td><strong>принятие корректирующих мер и мер по устранению последствий</strong></td>
+</tr>
+<tr>
+<td>10</td>
+<td>information that is <strong>not relevant to your enquiry</strong></td>
+<td>информации, <strong>не относящейся к вашему обращению</strong></td>
+<td>Accuracy / Style &amp; tone</td>
+<td><strong>Minor</strong></td>
+<td>This is a defensible translation. However, <em>enquiry</em> refers to the client's initial legal enquiry, while <em>обращение</em> is broader. It is acceptable but loses some contextual specificity.</td>
+<td><strong>информации, не относящейся к вашему запросу или юридическому вопросу</strong></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="what-this-sample-demonstrates">What this sample demonstrates</h3>
+<p>The sample deliberately contains different kinds of findings rather than ten spectacular translation errors.</p>
+<p>It shows that:</p>
+<ul>
+<li>some problems are <strong>grammatical and stylistic</strong>;</li>
+<li>some involve <strong>professional terminology</strong>;</li>
+<li>some affect <strong>meaning or legal precision</strong>;</li>
+<li>some are <strong>borderline choices</strong> that require contextual judgement;</li>
+<li>some cannot safely be resolved by the linguist alone and require <strong>jurisdiction-specific legal review</strong>.</li>
+</ul>
+<p>The sample contains <strong>no Critical finding</strong>. That is intentional. A severity category should not be used merely because a document is legal. A finding is Critical only when it meets the defined threshold of potential legal, privacy, security or irreversible user harm.</p>
+<h3 id="the-legal-professional-privilege-problem">The legal professional privilege problem</h3>
+<p>The most instructive cluster is the treatment of <strong>legal professional privilege</strong>.</p>
+<p>A superficially fluent system might translate the concept into familiar Russian legal vocabulary and produce something that looks much more natural than the literal <strong>юридическая профессиональная привилегия</strong>. But naturalness alone does not make the substitution legally correct.</p>
+<p>In particular, <strong>адвокатская тайна and legal professional privilege should not be treated as automatic equivalents</strong>. They arise from different legal concepts and may operate differently depending on jurisdiction.</p>
+<p>This is precisely the kind of issue that LQA should escalate rather than conceal:</p>
+<blockquote>
+<p><strong>A good LQA reviewer does not merely make the sentence sound better. The reviewer identifies when a linguistic decision requires legal or jurisdictional validation.</strong></p>
+</blockquote>
+<hr/>
+<h1 id="bonus-when-ai-localisation-is-almost-right">Bonus — When AI localisation is almost right</h1>
+<p>In a separate experiment, we tested a <strong>popular AI-powered website developer</strong> that can generate multilingual website content.</p>
+<p>Its Russian output was often grammatically understandable but occasionally revealed a characteristic localisation problem: language that is semantically transparent yet sounds translated rather than written for Russian-speaking users.</p>
+<p>For example:</p>
+<blockquote>
+<p><strong>«Четыре направления, в которых мы работаем на глубину, а не на широту.»</strong></p>
+</blockquote>
+<p>Nothing is grammatically broken. The intended message is understandable. Yet <strong>работаем на глубину, а не на широту</strong> does not sound like natural Russian professional copy. It preserves the conceptual structure of an English expression rather than reproducing its natural Russian formulation.</p>
+<p>Another example was:</p>
+<blockquote>
+<p><strong>«Двойная юрисдикционная компетенция»</strong></p>
+</blockquote>
+<p>Again, the phrase looks impressive and is understandable, but it raises questions about whether the terminology actually expresses the intended concept of expertise across jurisdictions in natural Russian professional language.</p>
+<p>These examples illustrate an important localisation principle:</p>
+<blockquote>
+<p><strong>A translation can be understandable and grammatically correct while still failing the target-language user experience.</strong></p>
+</blockquote>
+<p>Because the original English source for this experiment was not available, these examples are <strong>not treated as formal bilingual LQA findings</strong>. They are included only as illustrations of why target-language review matters.</p>
+<hr/>
+<h1 id="what-the-workflow-shows">What the workflow shows</h1>
+<p>The three stages are connected.</p>
+<h3 id="1-ux">1. UX</h3>
+<p>First, make the legal content usable.</p>
+<p>The question is:</p>
+<blockquote>
+<p><strong>Can the client understand what to do, what they are confirming and what happens next?</strong></p>
+</blockquote>
+<h3 id="2-localisation">2. Localisation</h3>
+<p>Then make the approved interface work naturally in another language.</p>
+<p>The question is:</p>
+<blockquote>
+<p><strong>Does the target-language user receive the same practical and legal message in language that feels native to the context?</strong></p>
+</blockquote>
+<h3 id="3-lqa">3. LQA</h3>
+<p>Finally, assess the output systematically.</p>
+<p>The question is:</p>
+<blockquote>
+<p><strong>Which remaining issues matter, how serious are they, and which ones require human or legal review?</strong></p>
+</blockquote>
+<p>This is a human-in-the-loop workflow rather than a claim that AI can independently guarantee quality.</p>
+<hr/>
+<h1 id="business-and-user-impact">Business and user impact</h1>
+<p>AI makes the first transformation fast. The remaining value lies in asking the right questions:</p>
+<ul>
+<li>Does the interface guide the client?</li>
+<li>Does the translated wording have the same legal effect?</li>
+<li>Does it fit the product?</li>
+<li>Does it sound as though it was written for the target audience?</li>
+<li>Are terminology and legal concepts being used consistently?</li>
+<li>Which problems actually affect the user or organisation?</li>
+<li>Which issues require specialist or jurisdiction-specific review?</li>
+</ul>
+<p><strong>You provide the legal substance—even as working notes. We turn it into clear client-facing content, localise it and quality-check the result.</strong></p>
+<p>If your team prefers a DIY workflow, this case study also shows the steps and checks required before publication. If legal time is better spent elsewhere, the same work can be delegated.</p>
+
+
+        <div class="bottom-actions">
+          <a href="services.html" class="btn">Back to services</a>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <footer>
+    © AK Language Studio, 2026
+  </footer>
+
+  <!-- 100% privacy-first analytics -->
+  <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+  <noscript>
+    <img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade"/>
+  </noscript>
+
+</body>
+</html>
