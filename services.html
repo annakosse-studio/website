@@ -3,11 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AK Language Studio – Professional Translation & Interpreting Services</title>
+  <title>AK Language Studio – Professional Language Services</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 
   <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #f6f1ea;
+      color: #222;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Lato', sans-serif;
+    }
+
+    p {
+      line-height: 1.7;
+      margin-bottom: 18px;
+    }
+
+    a {
+      color: #1822DE;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px 20px;
+    }
+
+    header h1 {
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 18px;
+      max-width: 760px;
+      margin: 0 auto 18px;
+      line-height: 1.6;
+    }
+
     .top-nav {
       margin-top: 20px;
       display: flex;
@@ -19,67 +60,114 @@
 
     .top-nav a {
       color: #1822DE;
-      text-decoration: none;
     }
 
-    .top-nav a:hover {
-      text-decoration: underline;
+    .services {
+      padding: 60px 20px 30px;
     }
 
-    body {
-      margin: 0;
-      font-family: 'Open Sans', sans-serif;
-      background-color: #f6f1ea;
-      color: #222;
-    }
-
-    header {
-      text-align: center;
-      padding: 40px 20px;
-    }
-
-    .services,
-    .services-grid,
-    .services-row {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 30px;
-      padding: 40px 20px;
-    }
-
-    .service,
-    .service-card,
-    .service-box {
-      background: white;
-      max-width: 320px;
-      padding: 25px;
-      border-radius: 12px;
-      box-shadow: 0 6px 16px rgba(0,0,0,0.08);
-    }
-
-    .service h3 {
-      margin-top: 0;
-    }
-
-    .form-section {
-      text-align: center;
-      padding: 60px 20px;
-    }
-
-    form {
-      max-width: 500px;
+    .service-content {
+      max-width: 1100px;
       margin: auto;
     }
 
-    input,
-    textarea {
+    .service-row {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+      margin-bottom: 90px;
+    }
+
+    .service-row.reverse {
+      flex-direction: row-reverse;
+    }
+
+    .service-text {
+      flex: 1;
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 0 40px;
+    }
+
+    .service-text h2 {
+      margin-top: 0;
+      margin-bottom: 20px;
+      font-size: 30px;
+    }
+
+    .service-text strong {
+      color: #1822DE;
+      font-weight: 700;
+    }
+
+    .service-image {
+      flex: 1;
+    }
+
+    .service-image img {
       width: 100%;
-      padding: 12px;
-      margin: 10px 0;
-      border-radius: 6px;
-      border: 1px solid #ccc;
-      box-sizing: border-box;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      border-radius: 16px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    }
+
+    .guide-divider {
+      text-align: center;
+      margin: 10px 0 40px;
+    }
+
+    .guide-divider img {
+      max-width: 150px;
+      width: 100%;
+      height: auto;
+    }
+
+    .guide-row {
+      max-width: 760px;
+      margin: 0 auto 80px;
+      background: white;
+      padding: 45px;
+      border-radius: 16px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    }
+
+    .guide-text {
+      max-width: 680px;
+      margin: auto;
+    }
+
+    .guide-text h2 {
+      margin-top: 0;
+      margin-bottom: 20px;
+      font-size: 28px;
+    }
+
+    .guide-text strong {
+      color: #1822DE;
+      font-weight: 700;
+    }
+
+
+    .btn {
+      display: inline-block;
+      background-color: #1822DE;
+      color: white;
+      padding: 14px 32px;
+      border-radius: 10px;
+      text-decoration: none;
+      margin-top: 20px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+      font-weight: 600;
+    }
+
+    .btn:hover {
+      background-color: #1018b8;
+      color: white;
+      text-decoration: none;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.18);
+      transform: translateY(-2px);
     }
 
     .secondary-btn {
@@ -87,12 +175,38 @@
       color: #1822DE;
       border: 2px solid #1822DE;
       box-shadow: none;
-      margin-top: 20px;
     }
 
     .secondary-btn:hover {
       background-color: #1822DE;
       color: white;
+    }
+
+    .form-section {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .form-section h2 {
+      margin-top: 0;
+      margin-bottom: 28px;
+      font-size: 28px;
+    }
+
+    form {
+      max-width: 500px;
+      margin: auto;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 15px;
     }
 
     button {
@@ -102,6 +216,13 @@
       border: none;
       border-radius: 6px;
       cursor: pointer;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 15px;
+      font-weight: 600;
+    }
+
+    button:hover {
+      opacity: 0.9;
     }
 
     footer {
@@ -110,147 +231,212 @@
       font-size: 14px;
     }
 
-    a {
-      color: #1822DE;
-      text-decoration: none;
-    }
-
-    .books-image {
-      text-align: center;
-      padding: 20px;
-    }
-
-    .books-image img {
-      max-width: 800px;
-      width: 100%;
-      border-radius: 12px;
-    }
-
-    h1,
-    h2,
-    h3 {
-      font-family: 'Lato', sans-serif;
-    }
-
-    .service {
-      padding: 80px 40px;
-    }
-
-    p {
-      line-height: 1.7;
-      margin-bottom: 18px;
-    }
-
     @media (max-width: 768px) {
+      header {
+        padding: 30px 15px 20px;
+      }
+
+      header p {
+        font-size: 16px;
+      }
+
+      .services {
+        padding: 35px 15px 20px;
+      }
+
+      .service-row,
+      .service-row.reverse {
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 70px;
+      }
+
+      .service-text,
+      .service-image {
+        width: 100%;
+      }
+
+      .service-text {
+        order: 1;
+        padding: 0;
+      }
+
+      .service-image {
+        order: 2;
+        max-width: 95%;
+        margin: auto;
+        display: block;
+      }
+
+      .service-text {
+        padding: 0;
+      }
+
+      .service-text h2 {
+        font-size: 25px;
+      }
 
       p {
         font-size: 16px;
       }
 
+      .guide-divider {
+        font-size: 36px;
+        margin: 10px 0 35px;
+      }
+
+      .guide-row {
+        flex-direction: column;
+        padding: 30px 22px;
+        margin-bottom: 60px;
+      }
+
+      .guide-icon {
+        order: -1;
+      }
+
+      .guide-icon img {
+        max-width: 160px;
+      }
+
+      .guide-text h2 {
+        font-size: 24px;
+      }
+
       .btn {
-        display: inline-block;
-        padding: 14px 20px;
+        padding: 16px 36px;
         font-size: 16px;
       }
 
-      .services {
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
-        justify-content: flex-start;
-        flex-wrap: nowrap;
-        gap: 20px;
-        padding: 24px 16px;
+      .top-nav {
+        gap: 16px;
       }
-
-      .service {
-        width: 100%;
-        max-width: none;
-        margin: 0;
-        padding: 22px 18px;
-        box-sizing: border-box;
-      }
-
     }
-
   </style>
 </head>
 
 <body>
 
-<header>
-  <h1>Professional Language Services</h1>
-  <p><a href="index.html" class="btn secondary-btn"> Back to packages</a></p>
+  <header>
+    <h1>Professional Language Services</h1>
+    <p>
+      Translation, interpreting, AI-supported translation, LQA, and post-editing
+      for legal, business, institutional, and multilingual communication workflows.
+    </p>
 
-  <div class="top-nav">
-    <a href="index.html">Packages</a>
-    <a href="services.html">Services</a>
-    <a href="portfolio.html">Portfolio</a>
-    <a href="guide.html">Guidelines</a>
-  </div>
-</header>
+    <div class="top-nav">
+      <a href="index.html">Packages</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="guide.html">Guidelines</a>
+    </div>
+  </header>
 
-<div class="books-image">
-<img src="images/books.jpg" alt="Language services">
-</div>
-    
+  <section class="services">
+    <div class="service-content">
 
-<section class="services">
+      <!-- Translation & Interpreting -->
+      <div class="service-row">
+        <div class="service-text">
+          <h2>Translation &amp; Interpreting</h2>
 
-<div class="service">
-<h3>Translation</h3>
-<p>
-Hand-crafted translation of business and legal documentation, compliant with regulatory requirements. Accurate and reliable delivery across English, French, Latvian, and Russian.
-</p>
-</div>
+          <p>
+            <strong>Translation</strong> covers legal, business, financial,
+            institutional, and professional documents, rendering their content
+            accurately and consistently for the intended reader. The focus is on
+            terminology, context, confidentiality, and the purpose of the document.
+          </p>
 
-<div class="service">
-<h3>Interpreting</h3>
-<p>
-Consecutive interpreting for business and court settings, delivered in person, by phone, or via video conference. Working languages: English, Latvian, and Russian.
-</p>
-</div>
+          <p>
+            <strong>Interpreting</strong> supports multilingual communication in
+            business, legal, and court-related settings, remotely or in person.
+            This may include glossary preparation, familiarisation with the procedure,
+            and attention to the communication context.
+          </p>
+        </div>
 
-<div class="service">
-<h3>AI-supported translation & machine translation post-editing</h3>
-<p>
-AI-assisted translation workflows combined with professional post-editing to increase speed and manage volume without compromising quality. Available for English, French, Latvian, and Russian.
-</p>
-</div>
+        <div class="service-image">
+          <img src="images/translation-interpreting.jpg" alt="Modern translation and interpreting workflow">
+        </div>
+      </div>
 
-</section>
+      <!-- AI-supported Translation, LQA & Post-editing -->
+      <div class="service-row reverse">
+        <div class="service-text">
+          <h2>AI-supported Translation, LQA &amp; Post-editing</h2>
 
-<section class="form-section">
+          <p>
+            <strong>AI-supported translation</strong> can make multilingual work
+            faster, but speed alone is not enough. The output still needs human
+            review to check terminology, consistency, context, confidentiality,
+            and suitability for the intended purpose.
+          </p>
 
-<h2>Get in touch</h2>
+          <p>
+            <strong>LQA and post-editing</strong> help teams review machine-translated,
+            AI-assisted, or otherwise multilingual content before delivery or publication.
+            The focus is on accuracy, terminology, style, omissions, formatting, and
+            recurring quality patterns that may affect the final result.
+          </p>
+        </div>
 
-<form action="https://formspree.io/f/xrbonaal" method="POST" class="contact-form">
-<input type="text" name="name" placeholder="Your name" required>
-<input type="email" name="email" placeholder="Your email" required>
-<textarea name="message" rows="5" placeholder="Brief description of your request"></textarea>
-<button type="submit">Send</button>
-</form>
+        <div class="service-image">
+          <img src="images/ai-lqa-postediting.jpg" alt="AI-supported translation and LQA workflow">
+        </div>
+      </div>
 
-</section>
+      <!-- In-house LQA Guide -->
+      
+      <div class="guide-divider" aria-hidden="true">
+        <img src="images/lqa-star.png" alt="In-house LQA Guide icon">
+      </div>
+      
+      <div class="guide-row">
+        <div class="guide-text">
+          <h2>In-house LQA Guide</h2>
 
-<footer>
-© AK Language Studio, 2026
-</footer>
-    
-<!-- 100% privacy-first analytics -->
-<script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
-<noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade"/></noscript>
+          <p>
+            <strong>In-house LQA Guide</strong> is a practical resource for teams
+            using AI-assisted translation, machine translation, or multilingual
+            content workflows. It helps organise quality review before content is
+            delivered, published, or reused.
+          </p>
 
+          <p>
+            The guide covers terminology, accuracy, consistency, omissions, formatting,
+            target-reader suitability, and recurring quality issues. It is intended
+            for non-language teams as well as language professionals who need a clear
+            review structure.
+          </p>
+
+          <a href="lqa-guide.html" class="btn secondary-btn">Read the guide</a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section class="form-section">
+    <h2>Request a tailored offer or free sample</h2>
+
+    <form action="https://formspree.io/f/xrbonaal" method="POST" class="contact-form">
+      <input type="text" name="name" placeholder="Your name" required>
+      <input type="email" name="email" placeholder="Your email" required>
+      <textarea name="message" rows="5" placeholder="Brief description of your request" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    © AK Language Studio, 2026
+  </footer>
+
+  <!-- 100% privacy-first analytics -->
+  <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+  <noscript>
+    <img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade"/>
+  </noscript>
 
 </body>
-
 </html>
-
-
-
-
-
-
-
-
-
